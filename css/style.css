@@ -1,0 +1,450 @@
+/* General */
+
+
+ body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100%;
+    height: 55vw;
+     overflow-y: hidden;
+}
+
+
+/* Welcome section */
+
+
+section {
+    width: 100%;
+    height: 50vw;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#overlay1 {
+    width: 100%;
+    height: 50vw;
+
+    z-index: 1000 !important;
+    
+    position: absolute;
+    
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(121, 243, 255, 0.6) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(127, 252, 255, 0.6) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(69, 233, 255, 0.6) 100%);
+}
+
+.overlay2 {
+    width: 100%;
+    height: 50vw;
+
+    z-index: 1000 !important;
+    
+    position: absolute;
+    
+    background: -moz-linear-gradient(top, rgba(45, 240, 255, 0.6) 0%, rgba(255,115,12,0.6) 100%);
+    background: -webkit-linear-gradient(top, rgba(54, 255, 250, 0.6) 0%,rgba(255,115,12,0.6) 100%);
+    background: linear-gradient(to bottom, rgba(35, 248, 255, 0.6) 0%,rgba(255,115,12,0.6) 100%);
+}
+
+
+.fullscreen-bg {
+    position: relative;
+    
+    z-index: -1000 !important;
+}
+
+.fullscreen-bg-video {
+    position: absolute;
+
+    width: 100%;
+    height: auto;
+    
+}
+
+
+
+.DivToScroll{
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+    left: -1px;
+    padding: 10px 7px 5px;
+}
+
+.DivWithScroll{
+    height:120px;
+    overflow:scroll;
+    overflow-x:hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#logo {
+    transition: .2s;
+    
+    opacity: 0.8;
+    
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    
+    height: 70px;
+    z-index: 3000;
+}
+
+#logo:hover {
+    opacity: 1;
+}
+
+#header {
+    position: fixed;
+    z-index: 2000;
+}
+
+#main {
+    z-index: 1000;
+}
+
+#nav-container {
+    position: fixed;
+    width: 100%;
+}
+
+#nav {
+    float: right;
+    z-index: 20000 !important;
+    
+    list-style: none;
+    text-align: center;
+    
+    margin: 10% 150px 0 0;
+}
+
+#nav a {
+    transition: .5s;
+    
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+#nav a:hover {
+    transition: .5s;
+    
+    font-size: 33px;
+}
+
+#nav li {
+    margin-bottom: 50px;
+}
+
+#go {
+    transition: .7s;
+    
+    width: 200px;
+    height: 200px;
+    margin: 45% auto;
+    
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#go:hover {
+    transition: .7s;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.row {
+    z-index: 1000 !important
+}
+
+#go img {
+    transform: rotate(90deg);
+    width: 60px;
+    margin: 43% 36%;
+}
+
+.slide-top {
+	-webkit-animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+    animation: slide-top 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate-reverse both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+#accueil h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin: 55% 0 0 25%;
+    white-space: nowrap;
+}
+
+.vibrate-1 {
+	-webkit-animation: vibrate-1 2s linear infinite both;
+	        animation: vibrate-1 2s linear infinite both;
+}
+
+@-webkit-keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+            transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+            transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+            transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+            transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+
+#accueil p {
+    position: fixed;
+    
+    color: white;
+    font-size: 12px;
+    
+    margin-left: 80px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* Services */
+
+#services a{
+    text-decoration: none !important;
+}
+
+#services .fullscreen-bg-video {
+    filter:brightness(80%);
+}
+
+#first-row {
+    margin-top: 8%;
+    text-align: center;
+}
+
+#comptable {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    width: 200px;
+    height: 200px;
+    float: right;
+    
+    border-radius: 50%;
+}
+
+#comptable:hover {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#comptable img {
+    width: 60px;
+    margin-top: 15%;
+    
+    filter: invert(100%);
+}
+
+#comptable h1 {
+    margin-top: 10px;
+    
+    color: white;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#finances {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.3);
+    
+    width: 350px;
+    height: 350px;
+    
+    border-radius: 50%;
+}
+
+#finances:hover {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#finances img {
+    width: 100px;
+    margin-top: 10%;
+    
+    filter: invert(100%);
+}
+
+#finances h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+    margin-top: 20px;
+}
+
+#second-row {
+    text-align: center;
+    
+    position: relative;
+    top: -140px;
+    left: 190px;
+    
+    max-width: 650px;
+}
+
+#audit {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin-top: -70px;
+    margin-right: -20px;
+    
+    border-radius: 50%;
+}
+
+#audit:hover {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#audit img {
+    width: 60px;
+    margin-top: 20%;
+    
+    filter: invert(100%);
+}
+
+#audit h1 {
+    margin-top: 20px;
+    
+    color: white;
+    font-size: 23px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#conseil {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.4);
+    
+    width: 250px;
+    height: 250px;
+    
+    border-radius: 50%;
+}
+
+#conseil:hover {
+    transition: .3s;
+    
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+#conseil img {
+    width: 80px;
+    margin-top: 20%;
+    
+    filter: invert(100%);
+}
+
+#conseil h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    
+    margin-top: 30px;
+}
